@@ -11,7 +11,7 @@ export default async function MovieTrailersComponent({ id }: { id: string }) {
 
   return (
     <div className="grid gap-5 place-items-center md:grid-cols-2 sm:grid-cols-1 lg:grid-cols-3 2xl:grid-cols-5">
-      {trailers.map((trailer) => (
+      {trailers.slice(0, 3).map((trailer) => (
         <iframe
           key={trailer.id}
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picutre-in-picture"
