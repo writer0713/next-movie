@@ -1,11 +1,8 @@
-'use client';
-
 import Link from 'next/link';
 
 export default function Navigation() {
-  // const pathname = usePathname();
   return (
-    <nav className="mt-10 mb-16">
+    <nav className="fixed top-0 left-0 right-0 z-10 py-5 opacity-90 bg-slate-900">
       <ul className="flex justify-start mx-10">
         <li className="mr-6">
           <Link

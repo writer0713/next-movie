@@ -20,7 +20,7 @@ export interface IMovie {
 
 export default function MovieCardComponent({ movie }: { movie: IMovie }) {
   return (
-    <Link prefetch href={`/movies/${movie.id}`}>
+    <Link href={`/movies/${movie.id}`} prefetch>
       <section className="flex flex-col items-center">
         <Image
           src={movie.poster_path}

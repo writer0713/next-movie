@@ -21,8 +21,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <Navigation />
-        {children}
+        <div className="relative">
+          <Navigation />
+          <div className="mt-20">{children}</div>
+        </div>
       </body>
     </html>
   );
